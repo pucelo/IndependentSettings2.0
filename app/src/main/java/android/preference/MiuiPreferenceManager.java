@@ -13,7 +13,7 @@ import android.content.pm.PackageManager.NameNotFoundException;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
-import android.support.annotation.XmlRes;
+import android.annotation.XmlRes;
 import android.util.Log;
 
 import java.util.ArrayList;

@@ -1,6 +1,6 @@
 package android.preference;
 
-import android.support.annotation.ArrayRes;
+import android.annotation.ArrayRes;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
