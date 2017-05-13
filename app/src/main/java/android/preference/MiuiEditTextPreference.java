@@ -2,7 +2,7 @@ package android.preference;
 
 
 import android.content.Context;
-
+import android.content.SharedPreferences;
 import android.content.res.TypedArray;
 import android.os.Parcel;
 import android.os.Parcelable;
