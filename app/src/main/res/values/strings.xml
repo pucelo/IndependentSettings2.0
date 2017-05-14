@@ -72,4 +72,10 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+    <string name="search_go">Search</string>
+    <string name="auto_app_launch">Приложение для запуска</string>
+    <string name="press_color_to_apply">Нажмите на цвет для выбора</string>
+    <string name="start_time_range">Время начала:</string>
+    <string name="stop_time_range">Время окончания:</string>
+
 </resources>

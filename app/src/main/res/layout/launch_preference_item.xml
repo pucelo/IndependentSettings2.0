@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/appIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@null"
+        android:padding="3dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="10dp"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="5dp">
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="235dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center"
+            android:textColor="@color/holo_button_normal"
+            android:textStyle="bold"
+            tools:text="Application Name" />
+
+        <TextView
+            android:id="@+id/appPackage"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:visibility="invisible"
+            tools:text="app.package.name" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="104dp"
+        android:layout_height="match_parent"
+        android:gravity="center|center_vertical"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</LinearLayout>
