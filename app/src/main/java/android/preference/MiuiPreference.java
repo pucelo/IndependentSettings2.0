@@ -13,10 +13,7 @@ import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.provider.Settings;
-import android.annotation.CallSuper;
-import android.annotation.DrawableRes;
-import android.annotation.LayoutRes;
-import android.annotation.StringRes;
+
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.AbsSavedState;
