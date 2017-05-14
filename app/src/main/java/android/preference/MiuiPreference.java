@@ -102,7 +102,7 @@ public class MiuiPreference implements Comparable<MiuiPreference>{
     }
 
     public MiuiPreference(Context context, AttributeSet attrs) {
-        this(context, attrs, context.getResources().getIdentifier("preferenceStyle", "attr", context.getPackageName()));
+        this(context, attrs, com.android.internal.R.attr.preferenceStyle);
     }
 
     public MiuiPreference(Context context, AttributeSet attrs, int defStyleAttr) {

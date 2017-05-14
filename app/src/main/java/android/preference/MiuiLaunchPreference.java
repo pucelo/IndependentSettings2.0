@@ -53,8 +53,8 @@ public class MiuiLaunchPreference extends MiuiDialogPreference implements Adapte
     private void initialization(Context context) {
         mContext = context;
         mPackageManager = context.getPackageManager();
-        setDialogLayoutResource(LayoutToID("launch_preference_layout"));
-        setWidgetLayoutResource(LayoutToID("launch_preference_app_icon"));
+        setDialogLayoutResource(LayoutToID("miui_launch_preference_layout"));
+        setWidgetLayoutResource(LayoutToID("miui_launch_preference_app_icon"));
     }
 
     @Override
@@ -340,7 +340,7 @@ public class MiuiLaunchPreference extends MiuiDialogPreference implements Adapte
         public View getView(final int position, View convertView, ViewGroup parent) {
             if (convertView == null) {
                 LayoutInflater inflater = LayoutInflater.from(mContext);
-                convertView = inflater.inflate(LayoutToID("launch_preference_item"), parent, false);
+                convertView = inflater.inflate(LayoutToID("miui_launch_preference_item"), parent, false);
                 ViewHolder viewHolder = new ViewHolder();
                 viewHolder.mAppNames = (TextView) convertView.findViewById(IDtoID("appName"));
                 viewHolder.mAppPackage = (TextView) convertView.findViewById(IDtoID("appPackage"));
