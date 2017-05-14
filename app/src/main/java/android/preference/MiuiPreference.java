@@ -1021,5 +1021,51 @@ public class MiuiPreference implements Comparable<MiuiPreference>{
         return result;
     }
 
+    public static void LaunchCustomApplication(Context mContext, String value, int mStorageType) {
+        String mPackageName = Settings.System.getString(mContext.getContentResolver(), value);
+        switch (mStorageType) {
+            case 1:
+                mPackageName = Settings.Global.getString(mContext.getContentResolver(), value);
+                break;
+            case 2:
+                mPackageName = Settings.Secure.getString(mContext.getContentResolver(), value);
+                break;
+        }
+        Intent intent = mContext.getPackageManager().getLaunchIntentForPackage(mPackageName);
+        if (intent != null) {
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            mContext.startActivity(intent);
+        }
+
+    }
+
+    public static int getKeyParam(Context mContext, String value, int mStorageType) {
+        switch (mStorageType) {
+            case 1:
+                return Settings.Global.getInt(mContext.getContentResolver(), value, 0);
+            case 2:
+                return Settings.Secure.getInt(mContext.getContentResolver(), value, 0);
+            default:
+                return Settings.System.getInt(mContext.getContentResolver(), value, 0);
+
+        }
+
+    }
+
+    public static long getKeyTime(Context mContext, String value, int mStorageType) {
+        switch (mStorageType) {
+            case 1:
+                return Settings.Global.getLong(mContext.getContentResolver(), value, 0);
+            case 2:
+                return Settings.Secure.getLong(mContext.getContentResolver(), value, 0);
+            default:
+                return Settings.System.getLong(mContext.getContentResolver(), value, 0);
+
+        }
+    }
+
+
+
+
 
 }
